@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Food Cafe</title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+      <script type="text/javascript">
+      	function renderGrid(){
+      		var blocks = document.getElementById("grid-layout").children;
+      		var pad = 35, cols = 3, newleft, newtop;
+      		for(var i=1; i<blocks.length; i++){
+      			if(i % cols == 0){
+      			newtop = (blocks[i-cols].offsetTop + blocks[i-cols].offsetHeight) + pad;
+      			blocks[i].style.top = newtop+"px";
+      		} else {
+      			if(blocks[i-cols]){
+      				newtop = (blocks[i-cols].offsetTop + blocks[i-cols].offsetHeight) + pad;
+      				blocks[i].style.top = newtop+"px";
+      			}
+      			newleft = (blocks[i-1].offsetLeft + blocks[i-1].offsetWidth) + pad;
+      			blocks[i].style.left = newleft+"px";
+      		}
+      	}
+	      	}
+      	window.addEventListener("load", renderGrid, false);
+      	window.addEventListener("resize", renderGrid, false);
+      </script>
+   </head>
+   <body>
+      <header class="upperpart">
+         <div class="logopart">
+            <a href="#"><img src="images/logo1.png" alt="logo" class="logo"></a>
+         </div>
+         <div class="marcopart">
+            <a href="#" class="marco">
+               <h5>Marco</h5>
+            </a>
+         </div>
+         <div class="desktoppart">
+            <div class="desktop"><a href="#"><i class="fas fa-times"></i></a></div>
+            <div class="desktop"><a href="#"><i class="fas fa-cloud-download-alt"></i></a></div>
+            <div class="desktop"><a href="#"></a><i class="fas fa-mobile"></i></div>
+            <div class="desktop"><a href="#"><i class="fas fa-tablet"></i></a></div>
+            <div class="desktop"><a href="#"><i class="fas fa-desktop"></i></a></div>
+         </div>
+      </header>
+      <section class="middlepart fadeInUp">
+         <div class="image"><a href="#" class="imagess"><img src="images/logo.png" alt="foodcafelogo"></a></div>
+         <nav class="navbar">
+            <ul class="nav">
+               <li class="list-item"><a href="#" class="list-link">Home</a></li>
+               <li class="list-item"><a href="#" class="list-link">About</a></li>
+               <li class="list-item"><a href="#" class="list-link">Menu</a></li>
+               <li class="list-item"><a href="#" class="list-link">Gallery</a></li>
+               <li class="list-item"><a href="#" class="list-link">Blog</a></li>
+               <li class="list-item"><a href="#" class="list-link">Pages</a></li>
+               <li class="list-item"><a href="#" class="list-link">Contact</a></li>
+            </ul>
+         </nav>
+      </section>
+      <section class="secondmiddlepart">
+         <p class="choice">WIDE OPTIONS OF CHOICE</p>
+         <h3 class="detailheader">Delicious Recipes</h3>
+         <p class="details">inappropriate behavior is often laughed off as “boys will be boys,” women <br> face higher conduct standards especially in the workplace. That’s why it’s <br> crucial that, as women.</p>
+         <input type="button" name="menu" class="menubutton" value="CHECK OUR MENU">
+      </section>
+      <section class="bodymiddle fadeInUp">
+         <section class="left ">
+            <h2 class="about">About Our Story</h2>
+            <p class="aboutdetails fade-scroll">Who are in extremely love with eco friendly system. Lorem ipsum dolor<br> sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,<br> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea <br> commodo consequat.</p>
+            <input type="button" name="menu" class="menubutton1" value="VIEW FULL MENU">
+         </section>
+         <section class="right">
+            <img src="images/about-img.jpg" alt="burger">
+         </section>
+      </section>
+      <section class="gallery fadeIn">
+         <div class="imageheader">
+            <div class="imgheader">
+               <h2 class="food">What kind of Foods we serve for you</h2>
+               <p>Who are in extremely love with eco friendly system.</p>
+            </div>
+         </div>
+         <div class="link">
+            <ul class="photos ">
+               <li class="filter active">All Menu</li>
+               <li class="filter">Breakfat</li>
+               <li class="filter">Lunch</li>
+               <li class="filter">Dinner</li>
+               <li class="filter">Budget Meal</li>
+               <li class="filter">Buffet</li>
+            </ul>
+         </div>
+         <div class="container">
+         	<div class="row">
+         		<div class="middle">
+         			<div class="productname">
+         				<h3 class="product">Cappuccion</h3>
+         				<h3 class="price">$49</h3>
+         			</div>
+         			<p>Usage of the Internet is becoming more common due to rapid advance.</p>
+         		</div>
+         		<div class="middle">
+         			<div class="productname">
+         				<h3 class="product">Americano</h3>
+         				<h3 class="price">$49</h3>
+         			</div>
+         			<p>Usage of the Internet is becoming more common due to rapid advance.</p>
+         		</div>
+         		<div class="middle">
+         			<div class="productname">
+         				<h3 class="product">Macchiato</h3>
+         				<h3 class="price">$49</h3>
+         			</div>
+         			<p>Usage of the Internet is becoming more common due to rapid advance.</p>
+         		</div>
+         		<div class="middle">
+         			<div class="productname">
+         				<h3 class="product">Mocha</h3>
+         				<h3 class="price">$49</h3>
+         			</div>
+         			<p>Usage of the Internet is becoming more common due to rapid advance.</p>
+         		</div>
+         		<div class="middle">
+         			<div class="productname">
+         				<h3 class="product">Piccolo Latte</h3>
+         				<h3 class="price">$49</h3>
+         			</div>
+         			<p>Usage of the Internet is becoming more common due to rapid advance.</p>
+         		</div>
+         		<div class="middle">
+         			<div class="productname">
+         				<h3 class="product">Ristretto</h3>
+         				<h3 class="price">$49</h3>
+         			</div>
+         			<p>Usage of the Internet is becoming more common due to rapid advance.</p>
+         		</div>
+         	</div>
+         </div>
+      </section>
+      <section class="thirdmiddlepart fadeInUp">
+         <div class="background"></div>
+         <div class="textpart">
+            <h2 class="textheader">Reserve Your Seats to <br> Confirm if You Come with <br> Your Family</h2>
+            <p class="textdetails">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  <br> veniam. Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+         </div>
+         <div class="textform">
+            <form class="forms">
+               <input type="text" name="Name" class="formcontrol" placeholder="Your Name" onfocus="this.placeholder=''" onblur="this.placeholder= 'Your Name'">
+               <input type="text" name="Name" class="formcontrol" placeholder="Your Email Address" onfocus="this.placeholder=''" onblur="this.placeholder= 'Your Email Address'">
+               <input type="text" name="Name" class="formcontrol" placeholder="Phone Number" onfocus="this.placeholder=''" onblur="this.placeholder= 'Phone Number'">
+               <input type="date" name="date" class="formcontrol" placeholder="Select Date & time" onfocus="this.placeholder=''" onblur="this.placeholder= 'Select Date & time'">
+               <input type="text" name="Name" class="formcontrol" placeholder="Select Event" onfocus="this.placeholder=''" onblur="this.placeholder= 'Select Event'">
+               <input type="button" name="menu" class="menubutton2" value="Make Reservation">
+            </form>
+         </div>
+      </section>
+      <section class="gallery fade">
+         <div class="imageheader">
+            <div class="imgheader">
+               <h2 class="food">Food and Customer Gallery</h2>
+               <p>Who are in extremely love with eco friendly system.</p>
+            </div>
+         </div>
+         <div class="link">
+            <ul class="photos">
+               <li class="filter active">All Menu</li>
+               <li class="filter">Breakfat</li>
+               <li class="filter">Lunch</li>
+               <li class="filter">Dinner</li>
+               <li class="filter">Budget Meal</li>
+               <li class="filter">Buffet</li>
+            </ul>
+         </div>
+         <div id="grid-layout">
+            <div class="grid-item">
+            	<img src="images/g1.jpg">
+            </div>
+            <div class="grid-item">
+            	<img src="images/g2.jpg">
+            </div>
+            <div class="grid-item">
+            	<img src="images/g3.jpg">
+            </div>
+            <div class="grid-item">
+            	<img src="images/g4.jpg">
+            </div>
+            <div class="grid-item">
+            	<img src="images/g5.jpg">
+            </div>
+            <div class="grid-item ">
+            	<img src="images/g6.jpg">
+            </div>
+         </div>
+      </section>
+      <section class="blog fadeInUp">
+         <div class="headingpart">
+            <h1><strong>Latest From Our Blog</strong></h1>
+            <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et <br> dolore magna aliqua.</P>
+         </div>
+         <div class="showpart">
+            <div class="parts">
+               <img src="images/b1.jpg" alt="food" class="imag">
+               <p class="firstdescribe">14 jan 2019</p>
+               <a href="#" class="blogtitle">Cooking Perfect Fried Rice in minutes</a>
+               <p class="seconddescribe">inappropriate behavior ipsum dolor sit amet, consectetur.</p>
+               <div class="lowerpart">
+                  <p><span class="like"><i class="far fa-heart"></i></span> 20 Likes</p>
+                  <p><span class="comment"><i class="far fa-comment"></i></span> 5 Comments</p>
+               </div>
+            </div>
+            <div class="parts">
+               <img src="images/b2.jpg" alt="food" class="imag">
+               <p class="firstdescribe">14 jan 2019</p>
+               <a href="#" class="blogtitle">Cooking Perfect Fried Rice in minutes</a>
+               <p class="seconddescribe">inappropriate behavior ipsum dolor sit amet, consectetur.</p>
+               <div class="lowerpart">
+                  <p><span class="like"><i class="far fa-heart"></i></span> 20 Likes</p>
+                  <p><span class="comment"><i class="far fa-comment"></i></span> 5 Comments</p>
+               </div>
+            </div>
+            <div class="parts">
+               <img src="images/b3.jpg" alt="food" class="imag">
+               <p class="firstdescribe">14 jan 2019</p>
+               <a href="#" class="blogtitle">Cooking Perfect Fried Rice in minutes</a>
+               <p class="seconddescribe">inappropriate behavior ipsum dolor sit amet, consectetur.</p>
+               <div class="lowerpart">
+                  <p><span class="like"><i class="far fa-heart"></i></span> 20 Likes</p>
+                  <p><span class="comment"><i class="far fa-comment"></i></span> 5 Comments</p>
+               </div>
+            </div>
+            <div class="parts">
+               <img src="images/b4.jpg" alt="food" class="imag">
+               <p class="firstdescribe">14 jan 2019</p>
+               <a href="#" class="blogtitle">Cooking Perfect Fried Rice in minutes</a>
+               <p class="seconddescribe">inappropriate behavior ipsum dolor sit amet, consectetur.</p>
+               <div class="lowerpart">
+                  <p><span class="like"><i class="far fa-heart"></i></span> 20 Likes</p>
+                  <p><span class="comment"><i class="far fa-comment"></i></span> 5 Comments</p>
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer class="mainfooter">
+         <div class="opening">
+            <h2 class="topic">Opening Hours</h2>
+            <ul class="hourlist">
+               <li class="hours">
+                  <span>Monday - Friday</span>
+                  <span>08.00am - 10.00pm</span>
+               </li>
+               <li class="hours">
+                  <span>Saturday</span>
+                  <span>08.00am - 10.00pm</span>
+               </li>
+               <li class="hours">
+                  <span>Sunday</span>
+                  <span>08.00am - 10.00pm</span>
+               </li>
+            </ul>
+         </div>
+         <div class="contact">
+            <h2 class="topic">Contact Us</h2>
+            <p class="describe">56/8, los angeles, rochy beach, Santa monica, <br> United states of america - 1205</p>
+            <h2 class="call">012-6532-568-9746 <br>012-6532-569-9748</h2>
+            <h2><b></b></h2>
+         </div>
+         <div class="news">
+            <h2 class="topic">Newsletter</h2>
+            <p class="describe">You can trust us. we only send promo offers, not a single spam.</p>
+            <form class="forme">
+               <input type="email" name="email" class="emailaddress" placeholder="Your Email Address" onfocus="this.placeholder=''" onblur="this.placeholder='Your Email Address'">
+               <div class="logo">
+                  <button class="logopartt">
+                  <span><i class="fas fa-arrow-right"></i></span>
+                  </button>
+               </div>
+            </form>
+         </div>
+      </footer>
+      <section class="secondfooter">
+         <p class="copyright">Copyright &copy;2019 All rights reserved | Design by <a href="#"><strong>SUND</strong></a></p>
+         <ul class="pnglogo">
+            <li class="pnglogos"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="pnglogos"><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li class="pnglogos"><a href="#"><i class="fab fa-dribbble"></i></a></li>
+            <li class="pnglogos"><a href="#"><i class="fab fa-behance"></i></a></li>
+         </ul>
+      </section>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+      <script type="text/javascript">
+
+      	// window.sr = ScrollReveal();
+      	// sr.reveal('.fadeInUp',{
+      	// 	duration: 2000,
+      	// 	origin:'top',
+      	// 	distance: '300px'
+      	// });
+
+      $(function() {   
+                var documentEl = $(document),
+                    fadeElem = $('.fadeInUp');
+                
+                
+                documentEl.on('scroll', function() {
+                    var currScrollPos = documentEl.scrollTop();
+                    
+                    fadeElem.each(function() {
+                        var $this = $(this),
+                            elemOffsetTop = $this.offset().top;
+                        if (currScrollPos > elemOffsetTop) $this.css('opacity', 1 - (currScrollPos-elemOffsetTop)/1200);
+                    }); 
+                });
+                
+            });
+
+       $(function() {   
+                var documentEl = $(document),
+                    fadeElem = $('.fadeIn');
+                
+                
+                documentEl.on('scroll', function() {
+                    var currScrollPos = documentEl.scrollTop();
+                    
+                    fadeElem.each(function() {
+                        var $this = $(this),
+                            elemOffsetTop = $this.offset().top;
+                        if (currScrollPos > elemOffsetTop) $this.css('opacity', 1 - (currScrollPos-elemOffsetTop)/1200);
+                    }); 
+                });
+                
+            });
+
+        $(function() {   
+                var documentEl = $(document),
+                    fadeElem = $('.fade');
+                
+                
+                documentEl.on('scroll', function() {
+                    var currScrollPos = documentEl.scrollTop();
+                    
+                    fadeElem.each(function() {
+                        var $this = $(this),
+                            elemOffsetTop = $this.offset().top;
+                        if (currScrollPos > elemOffsetTop) $this.css('opacity', 1 - (currScrollPos-elemOffsetTop)/1200);
+                    }); 
+                });
+                
+            });
+        
+        </script>
+
+   </body>
+</html>
